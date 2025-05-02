@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Инвентарный список</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Заголовок и изображение -->
+    <div class="img-container">
+      <img src="images/banner-1557841.jpg" alt="Изображение для сайта">
+      <h1>Введите название и добавьте количество единиц:</h1>
+    </div>
+
+    <!-- Форма для добавления записи -->
+    <form id="inventory-form" class="form-inline">
+      <input type="text" id="item-name" placeholder="Название" required>
+      <input type="text" id="item-category" placeholder="Категория" required>
+      <input type="number" id="item-quantity" placeholder="Количество" required>
+      <button type="submit">Добавить</button>
+    </form>
+
+    <!-- Таблица для отображения записей -->
+    <table id="inventory-table">
+      <thead>
+        <tr>
+          <th>Наименование</th>
+          <th>Категория</th>
+          <th>Количество</th>
+          <th>Действия</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2"><strong>Общее количество:</strong></td> 
+          <td id="total-quantity">0</td> 
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- Кнопка для скачивания TXT -->
+    <button class="download-btn" onclick="downloadTXT()">Скачать таблицу в формате TXT</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

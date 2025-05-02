@@ -6,15 +6,17 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-
+html, body {
+overflow-x: hidden;
+}
 .container {
   text-align: center;
   background: #030303;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 90%; /* Увеличенная ширина контейнера /
-  max-width: 600px; / Ограничение ширины */
+  max-width: 80vw;
+  margin: 0 auto;
 }
 
 h1 {

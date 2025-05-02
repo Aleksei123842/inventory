@@ -15,7 +15,7 @@ overflow-x: hidden;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  max-width: 80vw;
+  max-width: 90vw;
   margin: 0 auto;
 }
 
@@ -60,7 +60,7 @@ button:hover {
 }
 
 table {
-  width: 100%;
+  width: 70%;
   overflow-x: auto; /* Горизонтальная прокрутка */
   border-collapse: collapse;
 }

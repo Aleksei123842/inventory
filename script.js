@@ -28,15 +28,15 @@ function updateTable() {
     const row = document.createElement('tr');
     row.dataset.index = index;
     row.innerHTML = `
-      <td>${item.name}</td>
-      <td>${item.category}</td>
-      <td>${item.quantity}</td>
-      <td>
-        <button class="quantity-btn">+</button>
-        <button class="quantity-btn">-</button>
-        <button class="delete-btn">Удалить</button>
-      </td>
-    `;
+  <td>${item.name}</td>
+  <td>${item.category}</td>
+  <td>
+    <button class="quantity-btn" data-action="decrease">-</button>
+    <span class="item-quantity">${item.quantity}</span>
+    <button class="quantity-btn" data-action="increase">+</button>
+    <button class="delete-btn">Удалить</button> <
+  </td>
+`;
     tableBody.appendChild(row);
   });
 

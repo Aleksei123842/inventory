@@ -1,14 +1,14 @@
-
-
-   body {
+body {
   background-image: url(images/beg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+
 html, body {
-overflow-x: hidden;
+  overflow-x: hidden;
 }
+
 .container {
   text-align: center;
   background: #030303;
@@ -52,35 +52,31 @@ button {
   border: none;
   cursor: pointer;
   padding: 8px 16px;
-}
-button{
-  transition: background-color 0.3s
+  transition: background-color 0.3s;
 }
 
 button:hover {
   background-color: #45a049;
 }
 
+.table-container {
+  overflow-x: auto;
+  width: 100%;
+}
+
 table {
-  width: 70%;
-  overflow-x: auto; /* Горизонтальная прокрутка */
+  width: 100%;
   border-collapse: collapse;
-}
-td {
-padding: 9px 20px;
-}
-#inventory table {
-  width: 10%;
   max-width: 1200px;
-  padding: 8px;
-  word-wrap: break-word;
-  }
+}
+
 th, td {
   border: 1px solid #000000;
   padding: 10px;
   text-align: center;
   font-size: 18px;
-  white-space: nowrap; /* Запрещаем перенос строк */
+  white-space: nowrap; /* Запрещаем перенос строк /
+  min-width: 80px; / Минимальная ширина для колонок */
 }
 
 th {
@@ -96,7 +92,6 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
   background-color: #b8b8b8;
 }
-
 
 .delete-btn {
   background-color: #d9534f;
@@ -132,68 +127,22 @@ tr:nth-child(odd) {
 
 @media screen and (max-width: 600px) {
   .form-inline {
-    flex-direction: column; /* Поля формы в столбик */
+    flex-direction: column;
     width: 100%;
   }
-  #inventory-table th, #inventory-table td {
-    width: 25%; /* Равномерное распределение ширины */
+
+  table {
+    font-size: 14px;
   }
-  input {
-    width: 100%;
-  }
-  @media (max-wight: 600px){
-  body {
-  background-color: #007bff;
+
+  th, td {
+    padding: 6px;
+    min-width: auto; /* Сужаем ячейки на мобильных */
   }
 }
+
+.img-container img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
-tr:nth-child(odd) {
-  background-color: #b8b8b8; /* Белый фон для нечётных строк */
-}
-    .delete-btn {
-      background-color: #d9534f;
-      color: rgb(28, 28, 28);
-      border: none;
-      padding: 5px 10px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-
-    .delete-btn:hover {
-      background-color: #c9302c;
-    }
-
-    .quantity-btn {
-      background-color: #007bff;
-      color: white;
-      border: none;
-      padding: 5px 10px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-
-    .quantity-btn:hover {
-      background-color: #0056b3;
-    }
-
-    .download-btn {
-      margin-top: 20px; /* Отступ под таблицей /
-      padding: 10px 16px; / Увеличенный размер кнопки */
-      background-color: #4CAF50;
-      color: rgb(7, 88, 143);
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .download-btn:hover {
-      background-color: #45a049;
-    }
-
-    .img-container img {
-      width: 100%; /* Уменьшение для удобного отображения */
-      border-radius: 10px;
-      margin-bottom: 15px;
-    }
-  
- 

@@ -112,7 +112,7 @@ function deleteItem(index) {
 
 // Скачивание данных в TXT
 function downloadTXT() {
-  let content = "Название\tКатегория\tКоличество\n";
+  let content = "Название\tКатеnjhg\tКоличество\n";
   inventory.forEach(item => {
     content += `${item.name}\t${item.category}\t${item.quantity}\n`;
   });

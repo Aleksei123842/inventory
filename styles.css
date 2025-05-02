@@ -141,8 +141,12 @@ tr:nth-child(odd) {
   input {
     width: 100%;
   }
+  @media (max-wight: 600px){
+  body {
+  background-color: #007bff;
+  }
 }
-
+}
 tr:nth-child(odd) {
   background-color: #b8b8b8; /* Белый фон для нечётных строк */
 }
